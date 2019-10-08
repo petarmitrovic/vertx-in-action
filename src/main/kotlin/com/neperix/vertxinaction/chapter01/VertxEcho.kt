@@ -1,4 +1,4 @@
-package com.neperix.vertx
+package com.neperix.vertxinaction.chapter01
 
 import io.vertx.core.Vertx
 
