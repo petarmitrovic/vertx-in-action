@@ -28,6 +28,6 @@ class HelloVerticle : AbstractVerticle() {
 }
 
 fun main() {
-    val vertx: Vertx = Vertx.vertx()
+    val vertx = Vertx.vertx()
     vertx.deployVerticle(HelloVerticle())
 }
