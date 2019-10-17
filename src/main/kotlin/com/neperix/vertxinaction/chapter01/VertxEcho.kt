@@ -21,7 +21,7 @@ fun main() {
             val remoteAddress = socket.remoteAddress()
             println("Established a new connection: $remoteAddress")
 
-            socket.closeHandler { v -> connectionCount-- }
+            socket.closeHandler { connectionCount-- }
         }
         .listen(3000)
 

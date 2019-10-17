@@ -14,6 +14,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("io.vertx:vertx-core:3.8.0")
+    implementation("io.vertx:vertx-infinispan:3.8.0")
     implementation("ch.qos.logback:logback-classic:1.2.3")
 }
 
