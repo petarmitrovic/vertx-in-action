@@ -64,8 +64,6 @@ class Jukebox : AbstractVerticle() {
 
     private fun streamAudioChunk() {
         if (currentMode == State.Paused) {
-            logger.info("Starting the player...")
-            currentMode = State.Playing
             return
         }
 
