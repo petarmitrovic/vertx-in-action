@@ -39,3 +39,6 @@ proguard/
 .gradle/
 build/
 bin/
+
+# input files
+tracks/
