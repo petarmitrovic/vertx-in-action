@@ -30,6 +30,7 @@ class NetControl : AbstractVerticle() {
             "/list" -> listCommand(socket)
             "/play" -> vertx.eventBus().send("jukebox.play", "")
             "/pause" -> vertx.eventBus().send("jukebox.pause", "")
+            "/stop" -> vertx.eventBus().send("jukebox.stop", "")
             else -> {
                 if (command.startsWith("/schedule")) {
                     schedule(command)

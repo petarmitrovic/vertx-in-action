@@ -36,6 +36,7 @@ class Jukebox : AbstractVerticle() {
         eventBus.consumer("jukebox.schedule", this::schedule)
         eventBus.consumer("jukebox.play", this::play)
         eventBus.consumer("jukebox.pause", this::pause)
+        eventBus.consumer("jukebox.stop", this::stop)
 
         vertx.createHttpServer()
             .requestHandler(this::httpHandler)
@@ -60,6 +61,11 @@ class Jukebox : AbstractVerticle() {
 
     private fun pause(request: Message<Any>) {
         currentMode = State.Paused
+    }
+
+    private fun stop(request: Message<Any>) {
+        currentMode = State.Paused
+        closeCurrentFile()
     }
 
     private fun streamAudioChunk() {
