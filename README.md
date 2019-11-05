@@ -1,3 +1,5 @@
+![](https://github.com/petarmitrovic/vertx-in-action/workflows/.github/workflows/gradle.yml/badge.svg)
+
 # Vertx in Action (Kotlin)
 
 Here are the code samples from the https://www.manning.com/books/vertx-in-action.
